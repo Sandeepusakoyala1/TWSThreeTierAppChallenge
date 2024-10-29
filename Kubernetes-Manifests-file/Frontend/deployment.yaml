@@ -22,10 +22,10 @@ spec:
         role: frontend
     spec: 
       imagePullSecrets:
-      - name: ecr-registry-secret
+      - name: dockerhub-registry-secret
       containers:
       - name: frontend
-        image: 407622020962.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
+        image: sandeepusakoyalaa/frontedimage:latest
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
